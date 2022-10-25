@@ -1,0 +1,256 @@
+
+ /* ------------MENU OPEN --------------------- */
+.menu-container{
+    display: grid;
+    grid-template-rows: .5fr .5fr 5fr;
+    background-color: rgba(255, 255, 255, 0.928);
+    width: 25vw;
+    height: 100%;
+    /* border: 1px solid black; */
+    position:fixed;
+    
+}
+button {
+    cursor: pointer;
+}
+.hamburger {
+    margin: 1rem;
+    place-self: center;
+    position: fixed;
+}
+.logo-image {
+    height: 8vh;
+}
+.text-logo {
+    font-family: Helvetica Neue;
+    font-weight: 700;
+    font-size: 2vh;
+}
+/* .menu-container > div {
+    border: .2px solid black;
+} */
+.menu-open {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.close-menu {
+    background: none;
+    border: none;
+    font-size: 1.5vh;
+    text-align: start;
+    padding-left: 1rem;
+}
+.logo {
+    text-align: start;
+    align-self: center;
+}
+
+
+ /* ------------MENU SEARCH --------------------- */
+ .menu-search {
+
+
+ }
+ .menu-search-form {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    height: 100%;
+ }
+ /* .search-icon {
+    justify-self: end;
+
+
+ } */
+ #search {
+    width: 85%;
+    border-radius: 0;
+    border: 0.2px solid black;
+    height: 5vh;
+    align-self: end;
+
+ }
+ #search::placeholder {
+    color: black;
+    font-size: 80%;
+    padding-left: 1rem;
+ }
+
+ /* ------------MENU CLOSE --------------------- */
+
+
+
+
+
+ /* ------------MENU CONTENT --------------------- */
+.nav-container {
+    /* display: grid;
+    grid-template-rows: repeat(auto, 1fr); */
+    padding-left: 1.5rem;
+    height: 100%;
+    padding-top: 1rem;
+    overflow-x: auto;
+}
+
+.nav-container::-webkit-scrollbar {
+    width: 0.01em;
+  }
+  
+  .nav-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-container::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+.nav-button {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    /* border: .2px solid black; */
+    cursor: pointer;
+}
+
+.collection-expand {
+    background: none;
+    border: none;
+    justify-self: end;
+    padding-right: 2rem;
+    align-self: center;
+}
+p {
+    align-self: center;
+}
+.collection-expand-subCategories {
+    padding: .2rem 0 .2rem 2rem;
+    letter-spacing: 1px;
+    font-size: 1.2vh;
+}
+.sale {
+    color: red;
+}
+
+
+.replies-container {
+    overflow-x: auto;
+  }
+  .replies-container::-webkit-scrollbar {
+    width: 0.01em;
+  }
+  
+  .replies-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .replies-container::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+
+
+
+
+/* ------------MOBILE --------------------- */
+@media (max-width: 600px) {
+    * {
+        font-size: 2vh;
+    }
+
+ /* ------------MENU OPEN --------------------- */
+
+ .menu-container {
+    width: 80vw;
+    background-color: rgb(255, 255, 255);
+    
+}
+/* .menu-container > div {
+    border: .2px solid black;
+} */
+.menu-open {
+
+}
+.close-menu {
+
+}
+.logo {
+   
+}
+
+
+ /* ------------MENU SEARCH --------------------- */
+.menu-search {
+    border-top: .2px solid black;
+    border-bottom: .2px solid black;
+}
+
+ #search {
+    width: 95%;
+    border-radius: 0;
+    border: 0.2px solid black;
+    height: 5vh;
+    align-self: end;
+    place-self: center;
+
+ }
+ #search::placeholder {
+
+ }
+
+ /* ------------MENU CLOSE --------------------- */
+
+
+
+
+
+ /* ------------MENU CONTENT --------------------- */
+.nav-container {
+    /* display: grid;
+    grid-template-rows: repeat(auto, 1fr); */
+    padding-left: none;
+    font-size: 10vh;
+
+}
+
+.nav-button {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    /* border: .2px solid black; */
+}
+
+.collection-expand {
+    background: none;
+    border: none;
+    justify-self: end;
+    padding-right: 2rem;
+    align-self: center;
+    transition: all .5s ease-in-out;
+}
+p {
+    align-self: center;
+}
+.collection-expand-subCategories {
+    padding: .2rem 0 .2rem 2rem;
+    letter-spacing: 1px;
+    font-size: 1.8vh;
+
+    
+}
+
+
+.collection-expand:target {
+    height: auto;
+}
+
+
+
+.sale {
+    color: red;
+}
+
+
+}
